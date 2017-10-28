@@ -1,0 +1,32 @@
+
+<div class="container">
+	<div class="col-md-12">
+	
+
+		<div>
+			<h1>List of Food in System</h1>
+		</div>
+	
+		<hr>
+		
+		<div>
+			<ul>
+				<li ng-repeat="item in list track by $index">{{item}} - <button ng-click="deleteItem(list, $index)">Delete</button></li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<div>
+		
+			<form ng-submit="addItems(newItem)">
+				<input type="text" class="form-control" ng-model="newItem" ng-required="true">
+				<input type="submit" class="btn btn-primary" value="Add">
+			</form>
+
+		</div>
+
+	<div>
+
+
+</div>

@@ -1,0 +1,29 @@
+
+<div class="container">
+
+	<div class="col-md-12">
+
+
+		<center>		
+
+			<rh3>Let's See What You Should Cook Today!</h3>
+
+
+		<div>	
+			<center>
+				<h1 ng-if="randomFood !== 'empty'" class="fooditem">{{ randomFood }}</h1>
+				<img src="images/mysterybox.png" ng-if="randomFood === 'empty'" />
+			</center>
+		</div>
+			<hr>
+		<div>
+				<form data-ng-submit="submit()">
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" value="Click to Spin Food!">
+					</div>
+				</form>
+			</center>
+		</div>
+	</div>
+
+</div>
